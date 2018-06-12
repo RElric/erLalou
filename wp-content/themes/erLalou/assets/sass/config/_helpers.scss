@@ -1,0 +1,21 @@
+.hide-from-desktop {
+  @include from($desktop) {
+    display: none!important;
+  }
+}
+.hide-from-tablet {
+  @include from($tablet) {
+    display: none!important;
+  }
+}
+
+.hide-under-desktop {
+  @include under($desktop) {
+    display: none!important;
+  }
+}
+.hide-under-tablet {
+  @include under($tablet) {
+    display: none!important;
+  }
+}

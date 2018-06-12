@@ -1,0 +1,31 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sacramento', cursive;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h1 { font-size: 24px; }
+h2 { font-size: 22px; }
+h3 { font-size: 20px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+
+strong { font-weight: 500; }
+em { font-style: italic;}
+
+a {
+  @include simpleTransition;
+
+  color: $accent-color;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($accent-color, 20%);
+  }
+}

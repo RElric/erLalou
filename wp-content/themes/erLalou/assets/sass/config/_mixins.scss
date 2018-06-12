@@ -1,0 +1,77 @@
+
+/*  STYLES DES PLACEHOLDER DE CHAMPS DE FORMULAIRES
+ ***************************************************************/
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
+
+/*  MEDIAS QUERIES SIMPLIFIEES
+ ***************************************************************/
+@mixin under($value) {
+  @media (max-width: ($value - 1)) { @content; }
+}
+@mixin from($value) {
+  @media (min-width: $value) { @content; }
+}
+@mixin between($minvalue, $maxvalue) {
+  @media (min-width: $minvalue) and (max-width: ( $maxvalue - 1 )) { @content; }
+}
+
+/*  GENERE DES TRIANGLES
+ ***************************************************************/
+@mixin triangle($position, $width, $height, $color) {
+  @if($position == top) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 $width/2 $height $width/2;
+    border-color: transparent transparent $color transparent;
+  }
+  @if($position == right) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $width/2 0 $width/2 $height;
+    border-color: transparent transparent transparent $color;
+  }
+  @if($position == bottom) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $height $width/2 0 $width/2;
+    border-color: $color transparent transparent transparent;
+  }
+  @if($position == left) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $width/2 $height $width/2 0;
+    border-color: transparent $color transparent transparent;
+  }
+}
+
+/*  ANIMATION
+ ***************************************************************/
+@mixin simpleTransition() {
+  @include single-transition(all, .3s, ease-in-out);
+}
