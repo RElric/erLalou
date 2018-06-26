@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-06-05 17:42:58+0000\n"
+"PO-Revision-Date: 2018-06-21 08:27:18+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1737,15 +1737,6 @@ msgstr "La densité du mot-clé est de %1$s, ce qui est trop faible, le mot-clé
 msgid "%1$s of the sentences contain %2$spassive voice%3$s, which is more than the recommended maximum of %4$s. Try to use their active counterparts."
 msgstr "%1$s des phrases utilisent la %2$svoix passive%3$s, ce qui est supérieure à la valeur maximale recommandée de %4$s. Essayez de reformuler vos phrases."
 
-#. Translators: %1$d expands to the number of instances where 3 or more
-#. consecutive sentences start with the same word. 	   %2$d expands to the
-#. number of consecutive sentences starting with the same word.
-#: languages/yoast-seo-js.php:59
-msgid "The text contains %2$d consecutive sentences starting with the same word. Try to mix things up!"
-msgid_plural "The text contains %1$d instances where %2$d or more consecutive sentences start with the same word. Try to mix things up!"
-msgstr[0] "Le texte contient %2$d phrases consécutives commençant par le même mot. Essayez de mélanger tout cela !"
-msgstr[1] "Le texte contient %1$d instances ou %2$d ou plus de phrases consécutives commencent par le même mot. Essayez de mélanger tout cela !"
-
 #. Translators: %1$s expands to a link on yoast.com, %2$s expands to the
 #. recommended maximum sentence length, 	   %3$s expands to the anchor end tag.
 #: languages/yoast-seo-js.php:64
@@ -1807,6 +1798,13 @@ msgstr[1] "Ceci est légèrement en dessous du minimum recommandé de %2$d mots.
 msgid "The focus keyword '%1$s' does not appear in the SEO title."
 msgstr "Le mot-clé principal « %1$s » n’apparait pas dans le titre SEO de la page."
 
+#. Translators: %1$s expands to the number of sentences containing transition
+#. words, %2$s expands to a link on yoast.com, 	   %3$s expands to the anchor
+#. end tag, %4$s expands to the recommended value.
+#: languages/yoast-seo-js.php:100
+msgid "%1$s of the sentences contain a %2$stransition word%3$s or phrase, which is less than the recommended minimum of %4$s."
+msgstr "%1$s des phrases contiennent un %2$smot ou une phrase de transition %3$s, ce qui est inférieur au minimum recommandé de %4$s."
+
 #. Translators: The preceding sentence is "The text contains x words.", %2$s
 #. expands to the recommended minimum of words. 	   Translators: The preceding
 #. sentence is "The text contains x words.", %2$s expands to the recommended
@@ -1826,13 +1824,6 @@ msgid "This is far below the recommended minimum of %2$d word. Add more content 
 msgid_plural "This is far below the recommended minimum of %2$d words. Add more content that is relevant for the topic."
 msgstr[0] "Ceci est bien en dessous du minimum recommandé de %2$d mot. Ajoutez plus de contenu en relation avec le sujet."
 msgstr[1] "Ceci est bien en dessous du minimum recommandé de %2$d mots. Ajoutez plus de contenu en relation avec le sujet."
-
-#. Translators: %1$s expands to the number of sentences containing transition
-#. words, %2$s expands to a link on yoast.com, 	   %3$s expands to the anchor
-#. end tag, %4$s expands to the recommended value.
-#: languages/yoast-seo-js.php:100
-msgid "%1$s of the sentences contain a %2$stransition word%3$s or phrase, which is less than the recommended minimum of %4$s."
-msgstr "%1$s des phrases contiennent un %2$smot ou une phrase de transition %3$s, ce qui est inférieur au minimum recommandé de %4$s."
 
 #. Translators: %1$s expands to the number of sentences containing transition
 #. words, %2$s expands to a link on yoast.com, 	   %3$s expands to the anchor
@@ -1900,6 +1891,15 @@ msgstr[1] "%1$d paragraphes contiennent plus que le maximum recommandé de %2$d 
 #: languages/yoast-seo-js.php:88
 msgid "The amount of words following each of the subheadings doesn't exceed the recommended maximum of %1$d words, which is great."
 msgstr "La quantité de mots après chacun de vos intertitres ne dépasse pas la valeur maximale recommandée de %1$d mots, ce qui est bon."
+
+#. Translators: %1$d expands to the number of instances where 3 or more
+#. consecutive sentences start with the same word. 	   %2$d expands to the
+#. number of consecutive sentences starting with the same word.
+#: languages/yoast-seo-js.php:59
+msgid "The text contains %2$d consecutive sentences starting with the same word. Try to mix things up!"
+msgid_plural "The text contains %1$d instances where %2$d or more consecutive sentences start with the same word. Try to mix things up!"
+msgstr[0] "Le texte contient %2$d phrases consécutives commençant par le même mot. Essayez d’introduire des variations !"
+msgstr[1] "Le texte contient %1$d instances où %2$d ou plus de phrases consécutives commencent par le même mot. Essayez d’introduire des variations !"
 
 #: admin/class-bulk-editor-list-table.php:897
 msgid "Save all"
@@ -3266,7 +3266,7 @@ msgstr "Vous avez atteint votre limite d’activation. Vous devez <a href=\"%s\"
 msgid "Error 404: Page not found"
 msgstr "Erreur 404 : Page introuvable"
 
-#. #-#-#-#-#  wordpress-seo-code.pot (Yoast SEO 7.6)  #-#-#-#-#
+#. #-#-#-#-#  wordpress-seo-code.pot (Yoast SEO 7.6.1)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: admin/capabilities/class-capability-manager-integration.php:68
 msgid "Yoast SEO"

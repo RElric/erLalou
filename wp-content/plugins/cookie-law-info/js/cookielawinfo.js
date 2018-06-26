@@ -1,5 +1,5 @@
 function cli_show_cookiebar(p) {
-	/* plugin version 1.5.4 */
+	/* plugin version 1.5.8 */
 	var Cookie = {
 		set: function(name,value,days) {
 			if (days) {

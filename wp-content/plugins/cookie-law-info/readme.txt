@@ -4,7 +4,7 @@ Donate link:
 Tags: eu cookie law, GDPR, cookie law, cookie consent, eu privacy directive, privacy directive, cookies, privacy, compliance
 Requires at least: 3.3.1
 Tested up to: 4.9.6
-Stable tag: 1.5.7
+Stable tag: 1.5.8
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,7 @@ NOTE: INSTALLING THIS PLUGIN ALONE DOES NOT MAKE YOUR SITE GDPR COMPLIANT. SINCE
 
 Our plugin will help you to become GDPR compliant with following features. 
 
-- Plugin will show a notice with Accept and Reject options. By default the cookie value will be set to 'null'. If the user clicks 'Accept' button the value with be changed to 'yes'. IF the user clicks on 'Reject' the value will be set to 'no'. Your developer can check this value to set a cookie
+- Plugin will show a notice with Accept and Reject options. By default the cookie value will be set to 'null'. If the user clicks 'Accept' button the value will be changed to 'yes'. IF the user clicks on 'Reject' the value will be set to 'no'. Your developer can check this value to set a cookie
 
 - Admin can add cookie details from the backend. The list of cookies can be displayed in your cookie policy page by using a short code
 
@@ -166,6 +166,10 @@ See http://cookielawinfo.com for more information on what is required.
 
 == Changelog ==
 
+= 1.5.8 =
+
+* Support for <u> in the message bar.
+
 = 1.5.7 =
 * Danish translation added
 
@@ -265,6 +269,6 @@ See http://cookielawinfo.com for more information on what is required.
 
 == Upgrade Notice ==
 
-= 1.5.7 =
+= 1.5.8 =
 
-* Danish translation added
+* Support for <u> in the message bar.

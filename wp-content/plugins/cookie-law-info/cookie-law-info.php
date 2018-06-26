@@ -5,7 +5,7 @@ Plugin URI: https://wordpress.org/plugins/cookie-law-info/
 Description: A simple way of to show your website complies with the EU Cookie Law / GDPR.
 Author: webtoffee
 Author URI: https://www.webtoffee.com/product/gdpr-cookie-consent/
-Version: 1.5.7
+Version: 1.5.8
 License: GPL2
 Text Domain: cookie-law-info
 */
