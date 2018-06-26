@@ -10,4 +10,7 @@
   <?php wp_head(); ?>
 </head>
 <body>
+<nav>
+  <?= wp_nav_menu('erLalou-main') ?>
+</nav>
 <main>

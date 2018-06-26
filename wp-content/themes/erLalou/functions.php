@@ -17,3 +17,12 @@ add_action('wp_enqueue_scripts', function() {
   wp_register_script('jquery', 'https://code.jquery.com/jquery-3.3.1.min.js');
   wp_enqueue_script('jquery');
 });
+
+add_action('init', function() {
+  if(!has_nav_menu('erLalou-main')) :
+    register_nav_menus(array(
+      'erLalou-main' => 'Menu Principal',
+      'erLalou-second' => 'Menu secondaire'
+    ));
+  endif;
+});

@@ -105,6 +105,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 
+/* line 23, ../sass/config/_helpers.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /** Typography **/
 /* line 1, ../sass/config/_typos.scss */
 h1, h2, h3, h4, h5, h6 {
@@ -113,53 +120,60 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 6, ../sass/config/_typos.scss */
-p {
+*,
+body,
+html {
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
-}
-
-/* line 12, ../sass/config/_typos.scss */
-h1 {
-  font-size: 24px;
-}
-
-/* line 13, ../sass/config/_typos.scss */
-h2 {
-  font-size: 22px;
-}
-
-/* line 14, ../sass/config/_typos.scss */
-h3 {
-  font-size: 20px;
+  line-height: 120%;
 }
 
 /* line 15, ../sass/config/_typos.scss */
-h4 {
-  font-size: 18px;
+h1 {
+  font-size: 24px;
+  line-height: 180%;
 }
 
 /* line 16, ../sass/config/_typos.scss */
+h2 {
+  font-size: 22px;
+  line-height: 160%;
+}
+
+/* line 17, ../sass/config/_typos.scss */
+h3 {
+  font-size: 20px;
+  line-height: 140%;
+}
+
+/* line 18, ../sass/config/_typos.scss */
+h4 {
+  font-size: 18px;
+  line-height: 130%;
+}
+
+/* line 19, ../sass/config/_typos.scss */
 h5 {
   font-size: 16px;
 }
 
-/* line 17, ../sass/config/_typos.scss */
+/* line 20, ../sass/config/_typos.scss */
 h6 {
   font-size: 14px;
 }
 
-/* line 19, ../sass/config/_typos.scss */
+/* line 22, ../sass/config/_typos.scss */
 strong {
   font-weight: 500;
 }
 
-/* line 20, ../sass/config/_typos.scss */
+/* line 23, ../sass/config/_typos.scss */
 em {
   font-style: italic;
 }
 
-/* line 22, ../sass/config/_typos.scss */
+/* line 25, ../sass/config/_typos.scss */
 a {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -168,7 +182,7 @@ a {
   color: #4056F4;
   text-decoration: none;
 }
-/* line 28, ../sass/config/_typos.scss */
+/* line 31, ../sass/config/_typos.scss */
 a:hover {
   color: #0b22c3;
 }
