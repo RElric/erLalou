@@ -212,6 +212,20 @@ a:hover {
   margin-left: 20px;
 }
 
+/* line 1, ../sass/_footer.scss */
+#mentions {
+  background-color: #710627;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+/* line 8, ../sass/_footer.scss */
+#mentions a {
+  color: #fff;
+  font-size: 14px;
+}
+
 /** Pages **/
 @media (min-width: 1200px) {
   /* line 2, ../sass/pages/_front-page.scss */
