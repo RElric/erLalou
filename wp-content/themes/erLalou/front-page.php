@@ -134,5 +134,15 @@
       </div>
     </div>
   </section>
+  <section class="slide -contact" style="background-image: url('<?= wp_get_attachment_url(38) ?>');">
+    <div class="wrapper">
+      <div class="inner-wrapper">
+        <h2 class="title"><?= __('Me&nbsp;contacter', 'erLalou') ?></h2>
+        <div class="content">
+          <?= do_shortcode('[contact-form-7 id="5" title="Formulaire de contact 1"]'); ?>
+        </div>
+      </div>
+    </div>
+  </section>
 <?php endwhile; endif; ?>
 <?php get_footer('home') ?>

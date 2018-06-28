@@ -7,7 +7,7 @@
     .slide {
       @include simpleTransition;
 
-      width: 3%;
+      width: 4%;
       overflow: hidden;
       height: 100vh;
       position: relative;
@@ -89,7 +89,7 @@
       /** INTERACTIONS **/
       //When slide is selected
       &.-active {
-        width: 88%;
+        width: 80%;
 
         .inner-wrapper {
           padding: 25px;

@@ -240,7 +240,7 @@ a:hover {
     -o-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    width: 3%;
+    width: 4%;
     overflow: hidden;
     height: 100vh;
     position: relative;
@@ -339,7 +339,7 @@ a:hover {
   }
   /* line 91, ../sass/pages/_front-page.scss */
   .home main .slide.-active {
-    width: 88%;
+    width: 80%;
   }
   /* line 94, ../sass/pages/_front-page.scss */
   .home main .slide.-active .inner-wrapper {
