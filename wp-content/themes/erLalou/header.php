@@ -9,8 +9,10 @@
 
   <?php wp_head(); ?>
 </head>
-<body>
+<body class="<?= (is_front_page())? 'home' : ''; ?>">
+<!--
 <nav>
   <?= wp_nav_menu('erLalou-main') ?>
 </nav>
+-->
 <main>

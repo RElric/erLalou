@@ -9,13 +9,14 @@ add_action('wp_enqueue_scripts', function() {
   wp_register_style('dashicons', 'http://www.lauriane.local/wp-includes/css/dashicons.min.css');
   wp_enqueue_style('dashicons');
 
-  wp_enqueue_style('main', get_stylesheet_directory_uri().'/assets/css/main.css', array('sacramento', 'roboto', 'dashicons'));
+  wp_enqueue_style('erLalou-css', get_stylesheet_directory_uri().'/assets/css/main.css', array('sacramento', 'roboto', 'dashicons'));
 
 
   /*********** SCRIPTS ***********/
   wp_deregister_script('jquery');
   wp_register_script('jquery', 'https://code.jquery.com/jquery-3.3.1.min.js');
   wp_enqueue_script('jquery');
+  wp_enqueue_script('erLalou-js', get_stylesheet_directory_uri().'/assets/js/core.js', array('jquery'));
 });
 
 add_action('init', function() {

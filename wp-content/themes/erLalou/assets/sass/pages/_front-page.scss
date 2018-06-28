@@ -1,0 +1,159 @@
+@include from($desktop) {
+  .home main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .slide {
+      @include simpleTransition;
+
+      width: 3%;
+      overflow: hidden;
+      height: 100vh;
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-background-size: cover;
+      background-size: cover;
+
+      .wrapper {
+        @include simpleTransition;
+
+        height: 100vh;
+        position: relative;
+
+        .inner-wrapper {
+          @include translate(-50%,-50%);
+
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          text-align: center;
+          color: #fff;
+
+          h2 {
+            @include simpleTransition;
+            @include rotate(90deg);
+
+            font-size: 55px;
+            position: relative;
+
+            &::after {
+              @include simpleTransition;
+
+              content: '';
+              position: absolute;
+              bottom: 15px;
+              left: 0;
+              right: 0;
+              height: 1px;
+              background-color: #fff;
+              opacity: 0;
+            }
+          }
+
+          .subtitle,
+          .wysiwyg-content,
+          .content {
+            @include simpleTransition;
+
+            opacity: 0;
+            display: none;
+            font-size: 18px;
+            line-height: 140%;
+          }
+
+          .btn-innerlink {
+            @include simpleTransition;
+
+            display: block;
+            min-width: 250px;
+            width: 80%;
+            background-color: $main-color;
+            color:#fff;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 25px;
+            padding: 15px 20px;
+
+            &:hover {
+              background-color: $darker-color;
+            }
+          }
+        }
+      }
+
+      //Colors
+      .wrapper { background-color: transparentize($darker-color, 0.8); }
+
+      /** INTERACTIONS **/
+      //When slide is selected
+      &.-active {
+        width: 88%;
+
+        .inner-wrapper {
+          padding: 25px;
+
+          h2 { @include rotate(0); }
+          h2:after,
+          .subtitle,
+          .wysiwyg-content,
+          .content {
+            opacity: 1;
+            display: block;
+          }
+
+          .wysiwyg-content,
+          .content {
+            margin-top: 50px;
+            padding: 25px;
+            background-color: transparentize($darker-color, 0.6);
+            text-align: left;
+          }
+        }
+
+        &:hover .wrapper { background-color: transparentize($darker-color, 0.8); cursor: initial; }
+      }
+      //When slide is hovered
+      &:hover {
+        .wrapper { background-color: transparentize($darker-color, .5); cursor: pointer; }
+      }
+
+      /** SLIDE SPECIFIC STYLES **/
+      &.-ecritures,
+      &.-experiences{
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-between;
+
+          li {
+            width: 49%;
+          }
+        }
+      }
+
+      &.-experiences {
+
+        .inner-wrapper {
+          min-width: 500px;
+        }
+
+        ul > li {
+          position: relative;
+
+          > a {
+            display: block;
+            padding: 25px;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            background-color: $main-color;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

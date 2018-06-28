@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 body,
 html {
   font-family: 'Roboto', 'Arial', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 120%;
 }
@@ -163,17 +163,23 @@ h6 {
   font-size: 14px;
 }
 
-/* line 22, ../sass/config/_typos.scss */
+/* line 21, ../sass/config/_typos.scss */
+.subtitle {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+/* line 23, ../sass/config/_typos.scss */
 strong {
   font-weight: 500;
 }
 
-/* line 23, ../sass/config/_typos.scss */
+/* line 24, ../sass/config/_typos.scss */
 em {
   font-style: italic;
 }
 
-/* line 25, ../sass/config/_typos.scss */
+/* line 26, ../sass/config/_typos.scss */
 a {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -182,7 +188,7 @@ a {
   color: #4056F4;
   text-decoration: none;
 }
-/* line 31, ../sass/config/_typos.scss */
+/* line 32, ../sass/config/_typos.scss */
 a:hover {
   color: #0b22c3;
 }
@@ -204,4 +210,187 @@ a:hover {
 .container.-sidebar aside {
   max-width: 360px;
   margin-left: 20px;
+}
+
+/** Pages **/
+@media (min-width: 1200px) {
+  /* line 2, ../sass/pages/_front-page.scss */
+  .home main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  /* line 7, ../sass/pages/_front-page.scss */
+  .home main .slide {
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 3%;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    /** INTERACTIONS **/
+    /** SLIDE SPECIFIC STYLES **/
+  }
+  /* line 19, ../sass/pages/_front-page.scss */
+  .home main .slide .wrapper {
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: 100vh;
+    position: relative;
+  }
+  /* line 25, ../sass/pages/_front-page.scss */
+  .home main .slide .wrapper .inner-wrapper {
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+  }
+  /* line 34, ../sass/pages/_front-page.scss */
+  .home main .slide .wrapper .inner-wrapper h2 {
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 55px;
+    position: relative;
+  }
+  /* line 41, ../sass/pages/_front-page.scss */
+  .home main .slide .wrapper .inner-wrapper h2::after {
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0;
+  }
+  /* line 55, ../sass/pages/_front-page.scss */
+  .home main .slide .wrapper .inner-wrapper .subtitle,
+  .home main .slide .wrapper .inner-wrapper .wysiwyg-content,
+  .home main .slide .wrapper .inner-wrapper .content {
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    display: none;
+    font-size: 18px;
+    line-height: 140%;
+  }
+  /* line 66, ../sass/pages/_front-page.scss */
+  .home main .slide .wrapper .inner-wrapper .btn-innerlink {
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    min-width: 250px;
+    width: 80%;
+    background-color: #F2748B;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 25px;
+    padding: 15px 20px;
+  }
+  /* line 79, ../sass/pages/_front-page.scss */
+  .home main .slide .wrapper .inner-wrapper .btn-innerlink:hover {
+    background-color: #710627;
+  }
+  /* line 87, ../sass/pages/_front-page.scss */
+  .home main .slide .wrapper {
+    background-color: rgba(113, 6, 39, 0.2);
+  }
+  /* line 91, ../sass/pages/_front-page.scss */
+  .home main .slide.-active {
+    width: 88%;
+  }
+  /* line 94, ../sass/pages/_front-page.scss */
+  .home main .slide.-active .inner-wrapper {
+    padding: 25px;
+  }
+  /* line 97, ../sass/pages/_front-page.scss */
+  .home main .slide.-active .inner-wrapper h2 {
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  /* line 98, ../sass/pages/_front-page.scss */
+  .home main .slide.-active .inner-wrapper h2:after,
+  .home main .slide.-active .inner-wrapper .subtitle,
+  .home main .slide.-active .inner-wrapper .wysiwyg-content,
+  .home main .slide.-active .inner-wrapper .content {
+    opacity: 1;
+    display: block;
+  }
+  /* line 106, ../sass/pages/_front-page.scss */
+  .home main .slide.-active .inner-wrapper .wysiwyg-content,
+  .home main .slide.-active .inner-wrapper .content {
+    margin-top: 50px;
+    padding: 25px;
+    background-color: rgba(113, 6, 39, 0.4);
+    text-align: left;
+  }
+  /* line 115, ../sass/pages/_front-page.scss */
+  .home main .slide.-active:hover .wrapper {
+    background-color: rgba(113, 6, 39, 0.2);
+    cursor: initial;
+  }
+  /* line 119, ../sass/pages/_front-page.scss */
+  .home main .slide:hover .wrapper {
+    background-color: rgba(113, 6, 39, 0.5);
+    cursor: pointer;
+  }
+  /* line 125, ../sass/pages/_front-page.scss */
+  .home main .slide.-ecritures ul, .home main .slide.-experiences ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* line 131, ../sass/pages/_front-page.scss */
+  .home main .slide.-ecritures ul li, .home main .slide.-experiences ul li {
+    width: 49%;
+  }
+  /* line 139, ../sass/pages/_front-page.scss */
+  .home main .slide.-experiences .inner-wrapper {
+    min-width: 500px;
+  }
+  /* line 143, ../sass/pages/_front-page.scss */
+  .home main .slide.-experiences ul > li {
+    position: relative;
+  }
+  /* line 146, ../sass/pages/_front-page.scss */
+  .home main .slide.-experiences ul > li > a {
+    display: block;
+    padding: 25px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: #F2748B;
+    text-align: center;
+  }
 }
