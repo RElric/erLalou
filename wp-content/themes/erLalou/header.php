@@ -10,9 +10,14 @@
   <?php wp_head(); ?>
 </head>
 <body class="<?= (is_front_page())? 'home' : ''; ?>">
-<!--
-<nav>
-  <?= wp_nav_menu('erLalou-main') ?>
-</nav>
--->
+<aside class="header_top" id="menuPrincipal">
+  <h2 id="open_button" class="open_button capitalize">
+    <span class="dashicons dashicons-menu"></span>
+    Menu
+  </h2>
+  <div id="main_menu" class="main_menu hide">
+    <div class="dashicons dashicons-no-alt close_button" id="close_button"></div>
+    <?php wp_nav_menu('erLalou-main') ?>
+  </div>
+</aside>
 <main>

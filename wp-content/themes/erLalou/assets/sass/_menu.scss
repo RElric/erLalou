@@ -1,0 +1,105 @@
+.admin-bar .header_top,
+.admin-bar .header_top .main_menu {
+  top: 32px;
+}
+
+.header_top {
+  @include box-shadow(#000 0 0 7px);
+
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+  z-index: 9;
+
+  img {
+    display: block;
+    width: 150px;
+    height: 46px;
+  }
+
+  .open_button {
+    @include transition(all, .3s, ease-in-out);
+
+    margin: 0 auto;
+    line-height: 0.8;
+    background: transparentize($main-color, .2);
+    z-index: 1;
+    font-size: 16px;
+    padding: 15px;
+    display: flex;
+    vertical-align: center;
+
+    &:hover {
+      background: $main-color;
+    }
+  }
+
+  .main_menu {
+    @include transition(all, .3s, ease-in-out);
+
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: transparentize($main-color, .05);
+    z-index: 10;
+    display: flex;
+
+    &.hide {
+      -webkit-transform: translateY(-100%);
+      -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      -o-transform: translateY(-100%);
+      transform: translateY(-100%);
+      opacity: 0;
+      z-index: -1;
+    }
+
+    .close_button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 20px;
+      font-size: 40px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .menu {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .menu-item {
+      a {
+        text-decoration: none;
+        color: #000;
+        font-size: 24px;
+        padding: 10px;
+        text-transform: uppercase;
+        display: inline-block;
+      }
+
+      .sub-menu {
+        padding-bottom: 10px;
+
+        .menu-item a {
+          padding: 5px;
+          font-size: 18px;
+          text-transform: none;
+        }
+      }
+    }
+  }
+}
